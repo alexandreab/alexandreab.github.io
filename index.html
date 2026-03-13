@@ -124,16 +124,22 @@
                         <a
                             class="social-icon"
                             href="https://www.linkedin.com/in/alexandreab"
+                            data-ga-link-type="social"
+                            data-ga-destination="linkedin.com"
                             ><i class="fab fa-linkedin-in"></i
                         ></a>
                         <a
                             class="social-icon"
                             href="https://github.com/alexandreab"
+                            data-ga-link-type="social"
+                            data-ga-destination="github.com"
                             ><i class="fab fa-github"></i
                         ></a>
                         <a
                             class="social-icon"
                             href="https://twitter.com/alexandreab_to"
+                            data-ga-link-type="social"
+                            data-ga-destination="twitter.com"
                             ><i class="fab fa-twitter"></i
                         ></a>
                     </div>
@@ -442,6 +448,8 @@
                             <a
                                 href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=nyQbWBNzUk6VmOX5qstofQ2"
                                 target="_blank"
+                                data-ga-link-type="course"
+                                data-ga-destination="aws.training"
                             >
                                 Developing on AWS Training
                             </a>
@@ -453,6 +461,8 @@
                             <a
                                 href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=cqMPOsyfc02_Riw4BZQDDQ2"
                                 target="_blank"
+                                data-ga-link-type="course"
+                                data-ga-destination="aws.training"
                             >
                                 AWS Cloud Practitioner Essentials Training
                             </a>
@@ -464,6 +474,8 @@
                             <a
                                 href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=kcQkTpmwRkmhRWJGYhTiAQ2"
                                 target="_blank"
+                                data-ga-link-type="course"
+                                data-ga-destination="aws.training"
                             >
                                 Architecting on AWS Training
                             </a>
@@ -501,6 +513,15 @@
             gtag("js", new Date());
 
             gtag("config", "G-RKL0H44328");
+        </script>
+        <!-- Google Analytics Event Tracking -->
+        <script>
+            // Generic GA event sender
+            window.trackEvent = function(eventName, parameters) {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', eventName, parameters);
+                }
+            };
         </script>
     </body>
 </html>
